@@ -14,8 +14,8 @@ class Anagram
     updated_array = []
     new_array = string.sort.to_a
     new_array.each do |word|
-      array1 = word.to_a
-      array2 = @word.to_a
+      array1 = word.chars.to_a
+      array2 = @word.chars.to_a
       if array1 == array2
         updated_array << word
       end
