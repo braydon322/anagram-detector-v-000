@@ -13,7 +13,8 @@ class Anagram
     string.collect do |word|
       if @word.sort == word.sort
         word
-      end      
+      end
+    end   
   end
 
 end
