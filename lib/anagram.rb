@@ -12,7 +12,8 @@ class Anagram
 
   def match(string)
     updated_array = []
-    new_array = string.sort.to_a
+
+    new_array = string.to_a
     new_array.each do |word|
 
       array1 = word.chars.to_a
