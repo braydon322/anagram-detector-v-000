@@ -13,12 +13,7 @@ class Anagram
   end
 
   def match(string)
-    string.collect do |word|
-      binding.pry
-      if @word.sort == word.sort
-        word
-      end
-    end
+    string.sort.to_a
   end
 
 end
