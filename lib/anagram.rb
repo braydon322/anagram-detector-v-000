@@ -17,6 +17,7 @@ class Anagram
       if word.sort == @word.sort
         updated_array << word
       end
+    end
     updated_array
   end
 
