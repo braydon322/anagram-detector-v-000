@@ -11,8 +11,13 @@ class Anagram
   end
 
   def match(string)
+    updated_array = []
     new_array = string.sort.to_a
-    new_array
+    new_array.each do |word|
+      if word.sort == @word.sort
+        updated_array << word
+      end
+    updated_array
   end
 
 end
