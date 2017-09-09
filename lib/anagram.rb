@@ -11,10 +11,11 @@ class Anagram
 
   def match(string)
     string.collect do |word|
+      binding.pry
       if @word.sort == word.sort
         word
       end
-    end   
+    end
   end
 
 end
