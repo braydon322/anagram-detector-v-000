@@ -13,7 +13,8 @@ class Anagram
   end
 
   def match(string)
-    string.sort.to_a
+    new_array = string.sort.to_a
+
   end
 
 end
