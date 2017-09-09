@@ -5,6 +5,7 @@ class Anagram
 
   def initialize(word)
     @word = word
+    @self = self.name
   end
 
   def match(word)
