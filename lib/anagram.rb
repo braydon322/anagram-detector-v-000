@@ -14,12 +14,13 @@ class Anagram
     updated_array = []
     new_array = string.sort.to_a
     new_array.each do |word|
+
       array1 = word.chars.to_a
       array2 = @word.chars.to_a
-      if array1 == array2
+
+      if array1.sort == array2.sort
         updated_array << word
       end
-
     end
     updated_array
   end
