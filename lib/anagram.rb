@@ -5,10 +5,15 @@ class Anagram
 
   def initialize(word)
     @word = word
+
+
   end
 
-  def match(word)
-
+  def match(string)
+    string.collect do |word|
+      if @word.sort == word.sort
+        word
+      end      
   end
 
 end
